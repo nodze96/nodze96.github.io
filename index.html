@@ -233,7 +233,21 @@
     .action-btn.google-play:hover { box-shadow: 0 15px 34px rgba(62, 139, 230, .28); }
     .google-play-icon { width: 21px; height: 23px; flex: 0 0 auto; }
     .action-btn.steam { color: white; background: linear-gradient(135deg, #147bb0, #1b3f6d); }
+    .action-btn.coming-soon {
+      color: #dcecff;
+      border: 1px solid rgba(96,165,250,.34);
+      background: linear-gradient(135deg, rgba(37,99,235,.22), rgba(220,38,38,.16));
+      cursor: default;
+    }
+    .action-btn.coming-soon:hover { transform: none; box-shadow: none; }
     .arrow { font-size: 1.12rem; }
+
+    .sudoku-card::before {
+      background:
+        radial-gradient(circle at 92% 4%, rgba(56,189,248,.25), transparent 48%),
+        radial-gradient(circle at 5% 100%, rgba(239,68,68,.17), transparent 48%);
+    }
+    .sudoku-card .icon-frame { padding: 0; background: #111827; }
 
     .mahjong-card::before { background: radial-gradient(circle at 100% 0%, rgba(54,212,156,.28), transparent 52%); }
     .mahjong-card .icon-frame { padding: 0; background: #063b2b; }
@@ -395,6 +409,27 @@
                 </svg>
                 <span>Get it on Google Play</span><span class="arrow" aria-hidden="true">↗</span>
               </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card sudoku-card">
+          <div class="card-content">
+            <div class="game-head">
+              <div class="icon-frame">
+                <img class="game-icon" src="sudoku-wisdom-icon.png" alt="Sudoku Wisdom game icon">
+              </div>
+              <div>
+                <span class="status soon">Coming soon</span>
+                <h3 class="game-title">Sudoku Wisdom</h3>
+                <p class="game-meta">Puzzle · Logic · 250 Levels</p>
+              </div>
+            </div>
+
+            <p class="description">Train your focus across 250 Sudoku levels, track your progress, earn stars, and unlock timeless pieces of wisdom as you play.</p>
+
+            <div class="actions">
+              <span class="action-btn coming-soon" aria-disabled="true">Coming soon</span>
             </div>
           </div>
         </article>
